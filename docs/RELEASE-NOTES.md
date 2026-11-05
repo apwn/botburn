@@ -19,7 +19,7 @@ not only coding).
 - MIT license
 - Synthetic examples and SVG/PNG sample
 - [`docs/methodology.md`](./methodology.md) and static QA
-- `python3 scripts/validate.py` (no extra dependencies)
+- `python3 scripts/validate.py` and `--selftest` (stdlib only; negative fixtures)
 
 ### Not in this draft
 

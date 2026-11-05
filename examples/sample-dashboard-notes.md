@@ -11,4 +11,4 @@ Canvas order (keep simple):
 4. **Source details** — tables, Sources A/B/C…, as-of, cannot-attribute
 5. Hypotheses only if valuable; else “no justified change”
 
-Rules: `<1%` in tables only · no fake refresh · high share ≠ waste · sharing user-controlled.
+Rules: `<1%` in tables only (never charted as 0/0.5/1) · nested shares stay global unless the report renormalized · no fake refresh · high share ≠ waste · no recommendation without a fetched slice · sharing user-controlled.

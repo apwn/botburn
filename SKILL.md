@@ -11,7 +11,9 @@ Community skill **v0.1.0** (early release). Source:
 https://github.com/apwn/botburn
 
 Find where Grok Bot usage went across **all** work — chats, routines, bot-to-bot,
-group chats, shipping, social, coaching, ops — not only coding.
+and whatever else the report actually labels (group chats, shipping, social,
+coaching, ops if present) — not only coding. Do not invent activity buckets
+the live schema does not return.
 
 Read-only. Uses the supported usage report only. No invented tokens, models,
 dollar estimates, forecasts, or savings. No routine changes, watchers,
@@ -96,8 +98,11 @@ Then optional **Details** (provenance, full tables, deep-dive).
 10. **Partial windows.** Say when the week is partial; day shares use that
     window’s denominator.
 11. **Gaps first-class.** Mark gaps, hypotheses, coverage limits.
-12. **Reconciliation.** Nested rows add to the parent per the report; fuzzy
-    `<1%` tails — say so.
+12. **Reconciliation.** Nested rows add to the parent per the report, using
+    the **global** denominator unless the report renormalized (say if it
+    did). Do not add `<1%` tails as extra integer points on top of a parent
+    that already accounts for them. Fuzzy `<1%` tails — say so. Gaps
+    (child sums short of parent) stay gaps — not tokens or coding %.
 13. **Plan shape from the report.** Weekly limit, Enterprise team usage, or
     trial — do not force the wrong template. Enterprise remaining usage → team
     admin. usage-review wins on plan/billing language.

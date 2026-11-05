@@ -63,7 +63,8 @@ and tells you, in plain language:
 
 - Which bots burned the window (whatever you actually run — chats, coach
   check-ins, ops, drafts, shipping, social, not “the coding bot”).
-- How much was chats vs routines vs bot-to-bot.
+- Activity mix **as the report labels it** (the sample’s chats / routines /
+  bot-to-bot is fiction, not a frozen taxonomy).
 - Which day spiked, using that window’s denominator.
 - Whether anything is worth changing — or that it isn’t.
 
@@ -112,9 +113,18 @@ layout notes: [`examples/sample-dashboard-notes.md`](./examples/sample-dashboard
 ## Reporting limitations (read these)
 
 - **Reported shares only.** No invented tokens, models, per-call costs,
-  forecasts, or savings %.
+  forecasts, or savings %. No coding % unless the report states one.
+- **Live schema each run.** Discover what the usage report actually
+  supports (dimensions, periods). This kit does not freeze a field list.
 - **Global denominator.** Figures are shares of **all Grok Bot usage** in
-  the window unless the report says it renormalized.
+  the window unless the report says it renormalized. Filtered / nested
+  bot reads keep that global denominator unless the report says otherwise.
+  Nested rows should add to the parent; when `<1%` tails make the sum
+  fuzzy, say so — do not double-count.
+- **Current plan vs historical.** Default window is the current plan
+  period (often this week; say when it is partial). After an empty reset,
+  a `last_7_days` slice only if the live schema supports it. Percent-of-limit
+  is **current-week only** — do not mix it with a historical window.
 - **`<1%` stays `<1%`.** Not charted as 0, 0.5, or 1 — tables only.
 - **Frequency language ≠ executions.** “About N runs a week” is report
   wording, not a counted run total.
@@ -141,6 +151,6 @@ layout notes: [`examples/sample-dashboard-notes.md`](./examples/sample-dashboard
 | Method | [`docs/methodology.md`](./docs/methodology.md) |
 | Draft notes | [`docs/RELEASE-NOTES.md`](./docs/RELEASE-NOTES.md) |
 | License | [`LICENSE`](./LICENSE) (MIT) |
-| Local QA | `python3 scripts/validate.py` |
+| Local QA | `python3 scripts/validate.py && python3 scripts/validate.py --selftest` |
 
 **Botburn** — *find where your bots burn* · [Thomas Kanze on X](https://x.com/ThomasKanze)
