@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="680" viewBox="0 0 960 680" role="img" aria-labelledby="title desc">
+  <title id="title">Botburn sample usage breakdown (fictional)</title>
+  <desc id="desc">Synthetic chart: Harbor 44%, Quill 21%, Other 14%, Coach 12%, Ops 9% of all Grok Bot usage. Fiction only.</desc>
+  <rect width="960" height="680" fill="#F7F7F5"/>
+  <text x="40" y="40" font-family="ui-sans-serif, system-ui, sans-serif" font-size="22" font-weight="700" fill="#1A1A1A">Botburn · sample audit (fiction)</text>
+  <text x="40" y="64" font-family="ui-sans-serif, system-ui, sans-serif" font-size="13" fill="#5C5C5C">Shares of all Grok Bot usage · partial week Mon–Wed · not a real account · not an official app UI</text>
+
+  <!-- TLDR box — multi-line, stays inside bounds -->
+  <rect x="40" y="84" width="880" height="118" rx="10" fill="#FFFFFF" stroke="#D9D9D4"/>
+  <text x="56" y="108" font-family="ui-sans-serif, system-ui, sans-serif" font-size="14" font-weight="700" fill="#1A1A1A">TLDR</text>
+  <text x="56" y="130" font-family="ui-sans-serif, system-ui, sans-serif" font-size="13" fill="#333">Where: Harbor 44% of all Grok Bot usage.</text>
+  <text x="56" y="150" font-family="ui-sans-serif, system-ui, sans-serif" font-size="13" fill="#333">What matters: Site heartbeat 16% (about 700 runs/week language). Tue 51% of window.</text>
+  <text x="56" y="170" font-family="ui-sans-serif, system-ui, sans-serif" font-size="13" fill="#333">Worth changing?: maybe throttle heartbeat — needs approval; downside slower alerts.</text>
+  <text x="56" y="190" font-family="ui-sans-serif, system-ui, sans-serif" font-size="12" fill="#5C5C5C">High share does not mean waste · No savings % · Denominator: all Grok Bot usage</text>
+
+  <!-- Bot bars largest-first: 44, 21, 14, 12, 9 — track width 500px = 100% -->
+  <text x="40" y="234" font-family="ui-sans-serif, system-ui, sans-serif" font-size="15" font-weight="700" fill="#1A1A1A">Bots (largest first)</text>
+  <text x="40" y="252" font-family="ui-sans-serif, system-ui, sans-serif" font-size="11" fill="#5C5C5C">Bar length = share of all Grok Bot usage (same scale)</text>
+
+  <!-- Harbor 44% → 220px -->
+  <text x="40" y="282" font-family="ui-sans-serif, system-ui, sans-serif" font-size="12" fill="#333">Harbor</text>
+  <rect x="130" y="268" width="500" height="18" rx="4" fill="#E8E8E4"/>
+  <rect x="130" y="268" width="220" height="18" rx="4" fill="#3B6CED"/>
+  <text x="640" y="282" font-family="ui-sans-serif, system-ui, sans-serif" font-size="12" fill="#1A1A1A">44%</text>
+
+  <!-- Quill 21% → 105px -->
+  <text x="40" y="312" font-family="ui-sans-serif, system-ui, sans-serif" font-size="12" fill="#333">Quill</text>
+  <rect x="130" y="298" width="500" height="18" rx="4" fill="#E8E8E4"/>
+  <rect x="130" y="298" width="105" height="18" rx="4" fill="#7A9CF0"/>
+  <text x="640" y="312" font-family="ui-sans-serif, system-ui, sans-serif" font-size="12" fill="#1A1A1A">21%</text>
+
+  <!-- Other 14% → 70px (sorted correctly between Quill and Coach) -->
+  <text x="40" y="342" font-family="ui-sans-serif, system-ui, sans-serif" font-size="12" fill="#333">Other</text>
+  <rect x="130" y="328" width="500" height="18" rx="4" fill="#E8E8E4"/>
+  <rect x="130" y="328" width="70" height="18" rx="4" fill="#A0A09A"/>
+  <text x="640" y="342" font-family="ui-sans-serif, system-ui, sans-serif" font-size="12" fill="#1A1A1A">14%</text>
+
+  <!-- Coach 12% → 60px -->
+  <text x="40" y="372" font-family="ui-sans-serif, system-ui, sans-serif" font-size="12" fill="#333">Coach</text>
+  <rect x="130" y="358" width="500" height="18" rx="4" fill="#E8E8E4"/>
+  <rect x="130" y="358" width="60" height="18" rx="4" fill="#7A9CF0"/>
+  <text x="640" y="372" font-family="ui-sans-serif, system-ui, sans-serif" font-size="12" fill="#1A1A1A">12%</text>
+
+  <!-- Ops 9% → 45px -->
+  <text x="40" y="402" font-family="ui-sans-serif, system-ui, sans-serif" font-size="12" fill="#333">Ops</text>
+  <rect x="130" y="388" width="500" height="18" rx="4" fill="#E8E8E4"/>
+  <rect x="130" y="388" width="45" height="18" rx="4" fill="#7A9CF0"/>
+  <text x="640" y="402" font-family="ui-sans-serif, system-ui, sans-serif" font-size="12" fill="#1A1A1A">9%</text>
+
+  <!-- Activity: horizontal bars, shared 0-100% scale (500px track) -->
+  <text x="40" y="448" font-family="ui-sans-serif, system-ui, sans-serif" font-size="15" font-weight="700" fill="#1A1A1A">Activity mix (same 0–100% scale)</text>
+
+  <text x="40" y="478" font-family="ui-sans-serif, system-ui, sans-serif" font-size="12" fill="#333">Chats</text>
+  <rect x="130" y="464" width="500" height="18" rx="4" fill="#E8E8E4"/>
+  <rect x="130" y="464" width="275" height="18" rx="4" fill="#3B6CED"/>
+  <text x="640" y="478" font-family="ui-sans-serif, system-ui, sans-serif" font-size="12" fill="#1A1A1A">55%</text>
+
+  <text x="40" y="508" font-family="ui-sans-serif, system-ui, sans-serif" font-size="12" fill="#333">Routines</text>
+  <rect x="130" y="494" width="500" height="18" rx="4" fill="#E8E8E4"/>
+  <rect x="130" y="494" width="215" height="18" rx="4" fill="#C9A227"/>
+  <text x="640" y="508" font-family="ui-sans-serif, system-ui, sans-serif" font-size="12" fill="#1A1A1A">43%</text>
+
+  <text x="40" y="538" font-family="ui-sans-serif, system-ui, sans-serif" font-size="12" fill="#333">Bot-to-Bot</text>
+  <rect x="130" y="524" width="500" height="18" rx="4" fill="#E8E8E4"/>
+  <rect x="130" y="524" width="10" height="18" rx="4" fill="#A0A09A"/>
+  <text x="640" y="538" font-family="ui-sans-serif, system-ui, sans-serif" font-size="12" fill="#1A1A1A">2%</text>
+
+  <!-- Days -->
+  <text x="40" y="580" font-family="ui-sans-serif, system-ui, sans-serif" font-size="15" font-weight="700" fill="#1A1A1A">Days in window (shared baseline)</text>
+  <line x1="130" y1="650" x2="630" y2="650" stroke="#D9D9D4"/>
+  <!-- scale: 2px per % → Max 51% = 102px -->
+  <rect x="160" y="606" width="70" height="44" rx="4" fill="#7A9CF0"/>
+  <text x="175" y="598" font-family="ui-sans-serif, system-ui, sans-serif" font-size="12" fill="#1A1A1A">22%</text>
+  <text x="175" y="666" font-family="ui-sans-serif, system-ui, sans-serif" font-size="12" fill="#333">Mon</text>
+
+  <rect x="280" y="548" width="70" height="102" rx="4" fill="#3B6CED"/>
+  <text x="295" y="540" font-family="ui-sans-serif, system-ui, sans-serif" font-size="12" fill="#1A1A1A">51%</text>
+  <text x="297" y="666" font-family="ui-sans-serif, system-ui, sans-serif" font-size="12" fill="#333">Tue</text>
+
+  <rect x="400" y="596" width="70" height="54" rx="4" fill="#7A9CF0"/>
+  <text x="415" y="588" font-family="ui-sans-serif, system-ui, sans-serif" font-size="12" fill="#1A1A1A">27%</text>
+  <text x="415" y="666" font-family="ui-sans-serif, system-ui, sans-serif" font-size="12" fill="#333">Wed</text>
+
+  <!-- Insight -->
+  <rect x="680" y="560" width="240" height="100" rx="10" fill="#FFFFFF" stroke="#D9D9D4"/>
+  <text x="696" y="586" font-family="ui-sans-serif, system-ui, sans-serif" font-size="13" font-weight="700" fill="#1A1A1A">Careful insight</text>
+  <text x="696" y="608" font-family="ui-sans-serif, system-ui, sans-serif" font-size="11" fill="#333">Heartbeat may be cadence.</text>
+  <text x="696" y="624" font-family="ui-sans-serif, system-ui, sans-serif" font-size="11" fill="#333">Ask before changing.</text>
+  <text x="696" y="646" font-family="ui-sans-serif, system-ui, sans-serif" font-size="10" fill="#5C5C5C">x.com/ThomasKanze · MIT</text>
+</svg>

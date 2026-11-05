@@ -1,0 +1,1 @@
+When the user asks where Grok Bot usage went, which bots or routines burn the most, how to cut usage across all tasks (not only coding), or wants a Botburn audit or usage dashboard, run this before answering or changing anything.
